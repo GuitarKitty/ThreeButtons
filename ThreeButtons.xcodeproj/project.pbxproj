@@ -14,7 +14,6 @@
 		BE2CE0F12A548635006DDBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2CE0F02A548635006DDBE3 /* Assets.xcassets */; };
 		BE2CE0F42A548635006DDBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2CE0F22A548635006DDBE3 /* LaunchScreen.storyboard */; };
 		BE51874F2A54877A00C2BE2E /* MyAmazingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE51874E2A54877A00C2BE2E /* MyAmazingButtonView.swift */; };
-		BEC8DC1E2A56056900DF3C1A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8DC1D2A56056900DF3C1A /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		BE2CE0F32A548635006DDBE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2CE0F52A548635006DDBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE51874E2A54877A00C2BE2E /* MyAmazingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAmazingButtonView.swift; sourceTree = "<group>"; };
-		BEC8DC1D2A56056900DF3C1A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				BE2CE0E72A548634006DDBE3 /* AppDelegate.swift */,
 				BE2CE0E92A548634006DDBE3 /* SceneDelegate.swift */,
 				BE2CE0EB2A548634006DDBE3 /* ViewController.swift */,
-				BEC8DC1D2A56056900DF3C1A /* ModalViewController.swift */,
 				BE51874E2A54877A00C2BE2E /* MyAmazingButtonView.swift */,
 				BE2CE0ED2A548634006DDBE3 /* Main.storyboard */,
 				BE2CE0F02A548635006DDBE3 /* Assets.xcassets */,
@@ -145,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE51874F2A54877A00C2BE2E /* MyAmazingButtonView.swift in Sources */,
-				BEC8DC1E2A56056900DF3C1A /* ModalViewController.swift in Sources */,
 				BE2CE0EC2A548634006DDBE3 /* ViewController.swift in Sources */,
 				BE2CE0E82A548634006DDBE3 /* AppDelegate.swift in Sources */,
 				BE2CE0EA2A548634006DDBE3 /* SceneDelegate.swift in Sources */,
