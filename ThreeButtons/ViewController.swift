@@ -5,10 +5,12 @@
 //  Created by Efimenko Vyacheslav Sergeevich on 05.07.2023.
 //
 
-import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
     private lazy var stackView: UIStackView = {
+        addObserver(self, forKeyPath: "presentationController", options: [.new, .old], context: nil)
+
         let stackView = UIStackView(
             arrangedSubviews:
                 [
@@ -16,8 +18,6 @@ class ViewController: UIViewController {
                     MyAmazingButtonView(title: "Second medium button"),
                     MyAmazingButtonView(title: "Third") { [weak self] in
                         guard let self else { return }
-
-                        self.updateButtonsStyle()
                         self.presentModalVC()
                     }
                 ]
@@ -28,11 +28,16 @@ class ViewController: UIViewController {
         return stackView
     }()
 
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "presentationController" {
+            updateButtonsStyle()
+        }
+    }
+
     private func presentModalVC() {
-        let vc = ModalViewController()
-        vc.completion = updateButtonsStyle
+        let vc = UIViewController()
         vc.view.backgroundColor = .red
-        present(vc, animated: true, completion: nil)
+        present(vc, animated: true)
     }
 
     private func updateButtonsStyle() {
@@ -57,3 +62,4 @@ class ViewController: UIViewController {
         )
     }
 }
+

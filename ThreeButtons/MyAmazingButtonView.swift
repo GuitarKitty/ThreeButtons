@@ -75,6 +75,10 @@ final class MyAmazingButtonView: UIButton {
         }
     }
 
+    private func configure() {
+        setupContentConfiguration()
+    }
+
     private func setupContentConfiguration() {
         contentEdgeInsets = .init(top: 10, left: 14, bottom: 10, right: 14)
         semanticContentAttribute = .forceRightToLeft
